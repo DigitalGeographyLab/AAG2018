@@ -21,15 +21,20 @@ The repository is structured as follows.
 
 ## Required libraries
 
-The system was developed using the following libraries. Make sure you have installed the version mentioned below.
+The following libraries are required for Python 3.6. Make sure you have installed at least the version mentioned below.
 
 | Library | Version |
 |:---|:---|
-|||
-|||
+|fasttext|0.8.3|
+|emoji|0.4.5|
+|Keras|2.1.5|
+|numpy|1.14.2|
+|pandas|0.22.0|
+|scikit-learn|0.19.1|
+|tensorflow-gpu|1.6.0|
 
 ## Reference
 
 Feel free to re-use any of the code in this repository. If the code benefits your published research, please consider citing this work using the following reference:
 
-Hiippala, T., Fink C., Heikinheimo, V., Tenkanen, H. and Toivonen, T. (2018) Applying deep learning to multimodal data in social media. Paper presented at the 2018 American Association of Geographers Annual Meeting, April 10-14, New Orleans, Louisiana.
+Hiippala, T., Fink C., Heikinheimo, V., Tenkanen, H. and Toivonen, T. (2018) *Applying deep learning to multimodal data in social media*. Paper presented at the 2018 American Association of Geographers Annual Meeting, April 10-14, New Orleans, Louisiana.
