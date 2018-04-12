@@ -19,7 +19,9 @@ The repository is structured as follows.
 
 ## How to format your data
 
-The scripts assume that all your data is placed in the same folder as pickled NumPy arrays. The files should be named *data.npy* for images, *labels.npy* for labels and *embeddings.npy* for word embeddings. 
+The scripts assume that all your data is placed in the same folder as pickled NumPy arrays. 
+
+The files should be named *data.npy* for images, *labels.npy* for labels and *embeddings.npy* for word embeddings. 
 
 ## Required libraries
 
