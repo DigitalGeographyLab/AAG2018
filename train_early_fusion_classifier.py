@@ -19,12 +19,15 @@ ap = argparse.ArgumentParser()
 # Define arguments
 ap.add_argument("-dd", "--data_dir", required=True,
                 help="Path to directory with data and labels.")
+ap.add_argument("-of", "--output_file", required=True,
+                help="Path to the file where the trained model is saved.")
 
 # Parse arguments
 args = vars(ap.parse_args())
 
 # Assign arguments to variables
 path_to_data = args['data_dir']
+path_to_output = args['output_file']
 
 # Load images, word embeddings and labels
 images = np.load(os.path.join(path_to_data, 'data.npy'))
@@ -89,3 +92,6 @@ with tf.device('/cpu:0'):
 
     # Print the classification report
     print(report)
+
+# Save model
+model.save(path_to_output)

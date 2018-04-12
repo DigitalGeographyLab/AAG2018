@@ -11,7 +11,8 @@ ap = argparse.ArgumentParser()
 
 # Define arguments
 ap.add_argument("-df", "--dataframe", required=True,
-                help="Path to the Pandas DataFrame with image data.")
+                help="Path to the Pandas DataFrame with with pre-processed "
+                     "captions.")
 ap.add_argument("-of", "--output_file", required=True,
                 help="Path to the file in which the embeddings are saved.")
 
@@ -29,7 +30,7 @@ df = pd.read_pickle(path_to_df)
 # Extract captions and write them to a temporary file
 df['processed_texts'].to_csv('temp.txt', index=False)
 
-# Train 300-dimensional fastText embeddings
+# Train 300-dimensional fastText embeddings and save the model
 model = fasttext.skipgram(input_file='temp.txt', output=output_file, epoch=100,
                           lr=0.1, dim=300, silent=False, encoding='utf-8')
 
