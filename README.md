@@ -1,6 +1,6 @@
 # Applying deep learning to multimodal data in social media
 
-This repository contains code associated with the presentation "Applying deep learning to multimodal data in social media", given at the 2018 American Association for Geographers Annual Meeting, New Orleans, Louisiana. The slides for the presentation are available at: https://www.helsinki.fi/~thiippal/presentations/2018-aag.pdf
+This repository contains code associated with the presentation "Applying deep learning to multimodal data in social media", given at the 2018 American Association for Geographers Annual Meeting, New Orleans, Louisiana. The slides for the presentation are available at: http://www.helsinki.fi/~thiippal/presentations/2018-04-aag.pdf
 
 ## The basics
 
@@ -18,6 +18,8 @@ The repository is structured as follows.
 |train_word_embeddings.py|Learn word embeddings from a corpus of pre-processed captions.|
 
 ## How to format your data
+
+The scripts assume that all your data is placed in the same folder as pickled NumPy arrays. The files should be named *data.npy* for images, *labels.npy* for labels and *embeddings.npy* for word embeddings. 
 
 ## Required libraries
 
